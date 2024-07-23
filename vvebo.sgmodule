@@ -1,6 +1,5 @@
-#!name = Fix VVebo User Profile And Fans List
-#!desc = 修复VVebo失效的用户页面和粉丝列表。
-#!category = VVebo
+#!name = VVebo
+#!category = App
 
 [Script]
 fix_timeline_request = type=http-request,pattern=^https:\/\/api\.weibo\.cn\/2\/(users\/show\?|statuses\/user_timeline\?),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chenyxmr/surge/master/vvebo_user_profile.js

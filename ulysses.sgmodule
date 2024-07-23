@@ -1,0 +1,8 @@
+#!name = Ulysses
+#!category = App
+
+[Script]
+ulysses = type=http-response,pattern=^https:\/\/sk\.ulysses\.app\/api\/v1\/itunes_receipt_verify$,requires-body=1,max-size=0,script-path=ulysses.js
+
+[MITM]
+hostname = %APPEND% sk.ulysses.app
