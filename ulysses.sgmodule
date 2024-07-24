@@ -6,6 +6,3 @@ ulysses = type=http-response,pattern=^https:\/\/sk\.ulysses\.app\/api\/v1\/itune
 
 [MITM]
 hostname = %APPEND% sk.ulysses.app
-
-# [Rule]
-# DOMAIN,sk.ulysses.app,DIRECT
