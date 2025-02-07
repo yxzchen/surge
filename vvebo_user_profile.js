@@ -1,4 +1,8 @@
 let url = $request.url;
+if (!url.includes("Weibo_intl_4140")) {
+  $done({});
+}
+
 let hasUid = (url) => url.includes("uid");
 let getUid = (url) => (hasUid(url) ? url.match(/uid=(\d+)/)[1] : undefined);
 if (url.includes("remind/unread_count")) {
