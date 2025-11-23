@@ -1,0 +1,14 @@
+#!name = Misc
+#!category = App
+
+[Rule]
+URL-REGEX,^https:\/\/lng\.xiaohongshu\.com\/api\/collect$,REJECT
+URL-REGEX,^https:\/\/t2\.xiaohongshu\.com\/api\/v2\/collect$,REJECT\
+URL-REGEX,api/sns/v1/note/detailfeed/preload,REJECT
+URL-REGEX,api/sns/v6/homefeed,REJECT
+URL-REGEX,api/sns/v1/homefeed/client_downgrade/assemble,REJECT
+
+DOMAIN-SUFFIX,chat.bilibili.com,REJECT
+
+[MITM]
+hostname = %APPEND% *xiaohongshu.com
