@@ -7,6 +7,10 @@ URL-REGEX,^https:\/\/t2\.xiaohongshu\.com\/api\/v2\/collect$,REJECT
 URL-REGEX,api/sns/v1/note/detailfeed/preload,REJECT
 URL-REGEX,api/sns/v6/homefeed,REJECT
 URL-REGEX,api/sns/v1/homefeed/client_downgrade/assemble,REJECT
+DOMAIN,fe.xiaohongshu.com,REJECT
+DOMAIN,apm-native.xiaohongshu.com,REJECT
+DOMAIN,spider-tracker.xiaohongshu.com,REJECT
+DOMAIN,edith.xiaohongshu.com,REJECT
 
 DOMAIN-SUFFIX,chat.bilibili.com,REJECT
 
